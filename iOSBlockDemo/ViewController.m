@@ -32,7 +32,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"SecondViewController"]) {
-            SecondViewController *sViewController = [segue destinationViewController];
+            SecondViewController *sViewController = segue.destinationViewController;
         sViewController.delegate = self;
         sViewController.labelText = _label.text;
     }
