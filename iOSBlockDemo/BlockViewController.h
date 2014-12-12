@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BlockViewController.h
 //  iOSBlockDemo
 //
 //  Created by Huang Xianshuai on 14/12/11.
@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol xProtocol <NSObject>
+@interface BlockViewController : UIViewController
 
-- (void)changeLabelText:(NSString *)text;
-
-@end
-
-@interface ViewController : UIViewController <xProtocol>
 
 @end
-

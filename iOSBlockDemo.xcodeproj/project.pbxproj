@@ -14,6 +14,11 @@
 		ADA513311A39225000E15C80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA513301A39225000E15C80 /* Images.xcassets */; };
 		ADA513341A39225000E15C80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA513321A39225000E15C80 /* LaunchScreen.xib */; };
 		ADA513401A39225000E15C80 /* iOSBlockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA5133F1A39225000E15C80 /* iOSBlockDemoTests.m */; };
+		ADA5134B1A39227500E15C80 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA5134A1A39227500E15C80 /* SecondViewController.m */; };
+		ADA5134E1A39453500E15C80 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA5134D1A39453500E15C80 /* BlockViewController.m */; };
+		ADA513511A39454900E15C80 /* BlockSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA513501A39454900E15C80 /* BlockSecondViewController.m */; };
+		ADA513581A3AB49D00E15C80 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA513571A3AB49D00E15C80 /* KVOViewController.m */; };
+		ADA5135B1A3AB4AA00E15C80 /* KVOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA5135A1A3AB4AA00E15C80 /* KVOSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		ADA513391A39225000E15C80 /* iOSBlockDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBlockDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA5133E1A39225000E15C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA5133F1A39225000E15C80 /* iOSBlockDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSBlockDemoTests.m; sourceTree = "<group>"; };
+		ADA513491A39227500E15C80 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		ADA5134A1A39227500E15C80 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ADA5134C1A39453500E15C80 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		ADA5134D1A39453500E15C80 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		ADA5134F1A39454900E15C80 /* BlockSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSecondViewController.h; sourceTree = "<group>"; };
+		ADA513501A39454900E15C80 /* BlockSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockSecondViewController.m; sourceTree = "<group>"; };
+		ADA513561A3AB49D00E15C80 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		ADA513571A3AB49D00E15C80 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		ADA513591A3AB4AA00E15C80 /* KVOSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOSecondViewController.h; sourceTree = "<group>"; };
+		ADA5135A1A3AB4AA00E15C80 /* KVOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +98,10 @@
 			children = (
 				ADA513271A39225000E15C80 /* AppDelegate.h */,
 				ADA513281A39225000E15C80 /* AppDelegate.m */,
-				ADA5132A1A39225000E15C80 /* ViewController.h */,
-				ADA5132B1A39225000E15C80 /* ViewController.m */,
 				ADA5132D1A39225000E15C80 /* Main.storyboard */,
+				ADA513521A3AB44B00E15C80 /* Delegate */,
+				ADA513541A3AB46600E15C80 /* Block */,
+				ADA513551A3AB48100E15C80 /* KVO */,
 				ADA513301A39225000E15C80 /* Images.xcassets */,
 				ADA513321A39225000E15C80 /* LaunchScreen.xib */,
 				ADA513231A39225000E15C80 /* Supporting Files */,
@@ -117,6 +133,39 @@
 				ADA5133E1A39225000E15C80 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADA513521A3AB44B00E15C80 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ADA5132A1A39225000E15C80 /* ViewController.h */,
+				ADA5132B1A39225000E15C80 /* ViewController.m */,
+				ADA513491A39227500E15C80 /* SecondViewController.h */,
+				ADA5134A1A39227500E15C80 /* SecondViewController.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		ADA513541A3AB46600E15C80 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				ADA5134C1A39453500E15C80 /* BlockViewController.h */,
+				ADA5134D1A39453500E15C80 /* BlockViewController.m */,
+				ADA5134F1A39454900E15C80 /* BlockSecondViewController.h */,
+				ADA513501A39454900E15C80 /* BlockSecondViewController.m */,
+			);
+			name = Block;
+			sourceTree = "<group>";
+		};
+		ADA513551A3AB48100E15C80 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				ADA513561A3AB49D00E15C80 /* KVOViewController.h */,
+				ADA513571A3AB49D00E15C80 /* KVOViewController.m */,
+				ADA513591A3AB4AA00E15C80 /* KVOSecondViewController.h */,
+				ADA5135A1A3AB4AA00E15C80 /* KVOSecondViewController.m */,
+			);
+			name = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA5134B1A39227500E15C80 /* SecondViewController.m in Sources */,
 				ADA5132C1A39225000E15C80 /* ViewController.m in Sources */,
 				ADA513291A39225000E15C80 /* AppDelegate.m in Sources */,
+				ADA5134E1A39453500E15C80 /* BlockViewController.m in Sources */,
+				ADA513511A39454900E15C80 /* BlockSecondViewController.m in Sources */,
+				ADA513581A3AB49D00E15C80 /* KVOViewController.m in Sources */,
 				ADA513261A39225000E15C80 /* main.m in Sources */,
+				ADA5135B1A3AB4AA00E15C80 /* KVOSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
